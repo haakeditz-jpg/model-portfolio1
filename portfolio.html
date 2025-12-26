@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[My Name] | Graphic Designer & Creative Pro</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+
+        /* Animated Gradient Border for Profile Photo */
+        .profile-border {
+            position: relative;
+            padding: 5px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+            background-size: 300% 300%;
+            animation: gradient-rotate 4s ease infinite;
+        }
+
+        @keyframes gradient-rotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dark-bg { background-color: #0f172a; }
+    </style>
+</head>
+<body class="dark-bg text-slate-200">
+
+    <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center glass">
+        <div class="text-xl font-bold tracking-tighter">[MY NAME]</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+        <div class="profile-border mb-8" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="/2023_12_05_21_46_IMG_2474.JPG" alt="[My Name]" class="w-48 h-48 rounded-full object-cover border-4 border-[#0f172a]">
+        </div>
+        <h1 class="text-5xl md:text-7xl mb-4" data-aos="fade-up" data-aos-delay="200">[My Name]</h1>
+        <p class="text-blue-400 text-xl md:text-2xl font-light mb-6" data-aos="fade-up" data-aos-delay="400">
+            Graphic Designer • Video Editor • Voice Artist
+        </p>
+        <p class="max-w-xl text-slate-400 leading-relaxed" data-aos="fade-up" data-aos-delay="600">
+            Blending technology and creativity to tell compelling visual and auditory stories. Currently pursuing Engineering at University of Jaffna.
+        </p>
+    </section>
+
+    <section id="about" class="py-24 px-10 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl mb-6">About Me</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    I am a versatile creator with a background in <strong>Electro Technology</strong> and a passion for <strong>Graphic Design</strong>. My unique technical background allows me to approach creative problems with a structured, analytical mindset.
+                </p>
+                <div class="glass p-6 rounded-xl">
+                    <h3 class="text-blue-400 font-bold mb-2">Education</h3>
+                    <p class="font-semibold text-white">Bachelor of Engineering Technology (Honours)</p>
+                    <p class="text-sm text-slate-400 italic">Reading - University of Jaffna</p>
+                </div>
+            </div>
+            <div class="space-y-4" data-aos="fade-left">
+                <div class="glass p-6 rounded-xl hover:border-blue-500 transition-all duration-300">
+                    <i class="fa-solid fa-microphone text-blue-500 mb-2"></i>
+                    <h4 class="font-bold">Journalism & Voiceover</h4>
+                    <p class="text-sm text-slate-400">Professional voice acting for commercials and documentary storytelling.</p>
+                </div>
+                <div class="glass p-6 rounded-xl hover:border-pink-500 transition-all duration-300">
+                    <i class="fa-solid fa-clapperboard text-pink-500 mb-2"></i>
+                    <h4 class="font-bold">Content Creation</h4>
+                    <p class="text-sm text-slate-400">Producing high-impact video content for social media and brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-900/50 px-10">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl mb-12 text-center" data-aos="fade-up">Core Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass p-8 text-center rounded-2xl group hover:-translate-y-2 transition-all" data-aos="flip-left">
+                    <i class="fa-solid fa-pen-nib text-3xl mb-4 text-blue-400 group-hover:scale-125 transition"></i>
+                    <p class="font-semibold">Graphic Design</p>
+                </div>
+                <div class="glass p-8 text-center rounded-2xl group hover:-translate-y-2 transition-all" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fa-solid fa-video text-3xl mb-4 text-purple-400 group-hover:scale-125 transition"></i>
+                    <p class="font-semibold">Video Editing</p>
+                </div>
+                <div class="glass p-8 text-center rounded-2xl group hover:-translate-y-2 transition-all" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fa-solid fa-wave-square text-3xl mb-4 text-pink-400 group-hover:scale-125 transition"></i>
+                    <p class="font-semibold">Voice Artist</p>
+                </div>
+                <div class="glass p-8 text-center rounded-2xl group hover:-translate-y-2 transition-all" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fa-solid fa-newspaper text-3xl mb-4 text-green-400 group-hover:scale-125 transition"></i>
+                    <p class="font-semibold">Journalism</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-10 max-w-6xl mx-auto">
+        <h2 class="text-4xl mb-12 text-center" data-aos="fade-up">Featured Work</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="group relative overflow-hidden rounded-xl bg-slate-800" data-aos="fade-up">
+                <img src="https://via.placeholder.com/600x400" alt="Project" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                <div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold">Brand Identity</h3>
+                    <p class="text-sm text-slate-300">Modern logo & stationery design</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl bg-slate-800" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://via.placeholder.com/600x400" alt="Project" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                <div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold">Motion Graphics</h3>
+                    <p class="text-sm text-slate-300">Promotional video for tech brand</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl bg-slate-800" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://via.placeholder.com/600x400" alt="Project" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                <div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold">Voice Campaign</h3>
+                    <p class="text-sm text-slate-300">Radio commercial production</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center">
+        <div class="glass inline-block p-10 rounded-3xl" data-aos="zoom-in">
+            <h2 class="text-3xl mb-6">Ready to work together?</h2>
+            <a href="path-to-your-cv.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 inline-flex items-center gap-2">
+                <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 text-center">
+        <h2 class="text-2xl mb-8 uppercase tracking-widest text-slate-500">Connect with me</h2>
+        <div class="flex justify-center space-x-10">
+            <a href="https://wa.me/yournumber" class="text-4xl hover:text-green-500 transition transform hover:-translate-y-2"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://facebook.com/yourprofile" class="text-4xl hover:text-blue-600 transition transform hover:-translate-y-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" class="text-4xl hover:text-blue-400 transition transform hover:-translate-y-2"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p class="mb-4">Get in touch: <a href="mailto:hello@myname.com" class="text-white hover:text-blue-400 underline">hello@myname.com</a></p>
+        <p>© <span id="year"></span> [My Name]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
